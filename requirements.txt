@@ -1,6 +1,3 @@
-pandas>=1.1.5
-pymysql>=1.0.2
-requests>=2.25.1
 ccxt==2.7.60  
 apache-airflow-providers-mongo==2.3.0 
 airflow-provider-great-expectations==0.1.3
