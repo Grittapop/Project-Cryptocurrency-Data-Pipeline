@@ -114,7 +114,7 @@ with DAG(
 
     t8 = EmailOperator(
         task_id="notify",
-        to=["kan@dataengineercafe.io"],
+        to=["stellar@dataengineercafe.io"],
         subject="Loaded data into database successfully on {{ ds }}",
         html_content="Your pipeline has loaded data into database successfully",
     )
