@@ -15,8 +15,8 @@ from etl import (
 
 
 default_args = {
-    "owner": "sinatraa",
-    "email": ["kan@dataengineercafe.io"],
+    "owner": "stellar",
+    "email": ["stellar@dataengineer.io"],
     "start_date": timezone.datetime(2023, 5, 1),
     "retries": 3,
     "retry_delay": timedelta(minutes=3),
@@ -114,7 +114,7 @@ with DAG(
 
     t8 = EmailOperator(
         task_id="notify",
-        to=["stellar@dataengineercafe.io"],
+        to=["stellar@dataengineer.io"],
         subject="Loaded data into database successfully on {{ ds }}",
         html_content="Your pipeline has loaded data into database successfully",
     )
