@@ -36,11 +36,11 @@ Log in with the default credentials:
 
 ## Airflow Connection to MinIO
 Since MinIO offers S3 compatible object storage, we can set the connection type to "Amazon Web Services". However, we'll need to set an extra option, so that Airflow connects to MinIO instead of S3.
-- Connection Name: or any name you likeminio
-- Connection Type: Amazon Web Services
-- AWS Access Key ID: <replace_here_with_your_minio_access_key>
-- AWS Secret Access Key: <replace_here_with_your_minio_secret_key>
-- Extra: a JSON object with the following properties:
+- **Connection Name:** or any name you likeminio
+- **Connection Type:** Amazon Web Services
+- **AWS Access Key ID:** <replace_here_with_your_minio_access_key>
+- **AWS Secret Access Key:** <replace_here_with_your_minio_secret_key>
+- **Extra: a JSON object with the following properties:**
 
 ```yam
 {
